@@ -1,0 +1,54 @@
+:root {
+   --primary-color: #f7c7a1;
+   --secondary-color: #e59b7b;
+   --link-color: #5ba37f;
+   --title-color: #f04a52;
+   --subtitle-color: #ff8463;
+ }
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: var(--primary-color);
+   background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+   font-family: 'Roboto', sans-serif;
+   height: 100vh;
+}
+
+a {
+   color: var(--link-color);
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+.menu li {
+   list-style-type: none;
+}
+
+.menu ul {
+   display: flex;
+   justify-content: space-around;
+}
+
+.menu {
+   background-color: #fff;
+}
+
+.site-title,
+.site-subtitle {   
+   color: var(--link-color);
+   text-align: center;
+}
+
+.site-subtitle {
+   font-style: italic;
+}
